@@ -1,0 +1,46 @@
+<!-- Redirect -->
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="hero-unit center">
+        <h1 class="text-center">Page Not Found Error 404 </h1>
+        <br/>
+
+      </div>
+
+      <h2 class="text-center">You'll be automatically redirected in <span id="count"><b>8</b></span> seconds...</h2>
+
+
+    </div>
+
+    <!-- Count Down Timer -->
+
+    <script type="text/javascript">
+      window.onload = function() {
+
+        (function() {
+          var counter = 8;
+
+          setInterval(function() {
+            counter--;
+            if (counter >= 0) {
+              span = document.getElementById("count");
+              span.innerHTML = counter;
+            }
+            // Display 'counter'
+            if (counter === 0) {
+
+              clearInterval(counter);
+            }
+
+          }, 800);
+
+        })();
+
+      }
+    </script>
+
+    <meta http-equiv="refresh" content="8;url=index.php" />
+
+    <!-- Form -->
